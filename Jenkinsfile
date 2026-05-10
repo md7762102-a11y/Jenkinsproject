@@ -1,4 +1,5 @@
 pipeline{
+  agent any
   parameters{
     string(name: 'username', defaultValue: 'Mamta', description: 'enter your name')
   }
