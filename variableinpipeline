@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    environment{
+        app_name="devops learning"
+    }
+    stages{
+        stage('variable'){
+            steps{
+                sh 'echo "my app name is : $app_name"'
+                sh 'echo "my build_number is : $BUILD_NUMBER"'
+                sh 'echo "my job name is : $JOB_NAME"'
+            }
+        }
+    }
+  }
