@@ -1,0 +1,21 @@
+pipeline {
+
+    agent any
+
+    parameters {
+        string(
+            name: 'NAME',
+            defaultValue: 'Mamta',
+            description: 'Enter your name'
+        )
+    }
+
+    stages {
+
+        stage('Values') {
+            steps {
+                sh 'echo "This is name: ${NAME}"'
+            }
+        }
+    }
+}
