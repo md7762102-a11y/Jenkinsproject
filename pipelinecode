@@ -1,0 +1,24 @@
+pipeline{
+    agent any
+    stages  {
+        stage('Build'){
+            steps{
+                sh 'echo "build steps"'
+                sh 'date'
+                }
+        }
+        stage('test'){
+            steps{
+                sh 'echo "test steps"'
+                sh 'hostname'
+                }
+        }
+        stage('deploy'){
+            steps {
+                sh 'echo "deploy steps"'
+                sh 'whoami'
+            }
+        }
+        
+          }
+}
