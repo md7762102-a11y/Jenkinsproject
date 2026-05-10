@@ -1,0 +1,9 @@
+echo "Hello $Name"
+echo "welcome to jenkins dear"
+echo "Build Number: $BUILD_NUMBER"
+
+echo "Job Name: $JOB_NAME"
+
+echo "Workspace: $WORKSPACE"
+
+echo "Build ID: $BUILD_ID"
