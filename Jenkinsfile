@@ -1,6 +1,6 @@
 pipeline{
   parameters{
-    string(name: 'username', defaultValue: 'Mamta'. description: 'enter your name')
+    string(name: 'username', defaultValue: 'Mamta', description: 'enter your name')
   }
   stages{
     stage('build'){
